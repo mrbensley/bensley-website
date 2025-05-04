@@ -104,34 +104,38 @@
 		<div class="inner split">
 			<div>
 				<section>
-					<h2>Adelaide Video Production</h2>
-					<p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
-				</section>
+					<h2>Background</h2>
+					<p>Bensley Media is a full-service video production agency based in Adelaide, South Australia.</p>
+					<p>Led by Creative Director Ben Crossley, we take a hands-on, collaborative approach to every project. From concept development and filming through to editing and final delivery, Ben personally oversees each stage to ensure your story is told with clarity, creativity, and impact.</p>
+					<p>We work closely with a trusted network of industry professionals, including producers, presenters, camera operators, marketing specialists, and photographers, allowing us to scale our team to suit the unique needs of every production.</p>
+					<p>Over the years, Bensley Media has proudly partnered with clients across a wide range of industries, including local and state government, education, construction, hospitality, entertainment, non-profits, defence, sport and recreation, and the SA Film Corporation.</p>				</section>
 				<section>
 					<ul class="icons">
-						<li><a href="#" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
-						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.youtube.com/@BensleyMedia/videos" class="icon brands fa-youtube" target="_blank" rel="noopener noreferrer"><span class="label">YouTube</span></a></li>
+						<li><a href="https://www.linkedin.com/in/benjamin-crossley" class="icon brands fa-linkedin-in" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+						<!--
 						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						-->
 					</ul>
 				</section>
 				<p class="copyright">
-					&copy; 2025
+					&copy; <span id="current-year"></span>
 				</p>
 			</div>
 			<div>
 				<section>
 					<h2>Get in touch</h2>
-					<form method="post" action="#">
+					<form method="POST" action="https://formspree.io/f/xanqwzaz">
 						<div class="fields">
 							<div class="field half">
-								<input type="text" name="name" id="name" placeholder="Name" />
+								<input type="text" name="name" id="name" placeholder="Name" required />
 							</div>
 							<div class="field half">
-								<input type="text" name="email" id="email" placeholder="Email" />
+								<input type="email" name="email" id="email" placeholder="Email" required />
 							</div>
 							<div class="field">
-								<textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+								<textarea name="message" id="message" rows="4" placeholder="Message" required></textarea>
 							</div>
 						</div>
 						<ul class="actions">
@@ -163,6 +167,10 @@
 		videosHeight: 'auto',
 	});
 </script>
+<script>
+	// This script sets the current year in the footer copyright section
+	document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
